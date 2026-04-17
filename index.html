@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarbjot Singh — AI & Data Science</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text">SS</span>
+      <span class="logo-bracket">]</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" data-text="about">about</a></li>
+      <li><a href="#skills" data-text="skills">skills</a></li>
+      <li><a href="#experience" data-text="experience">experience</a></li>
+      <li><a href="#projects" data-text="projects">projects</a></li>
+      <li><a href="#contact" data-text="contact">contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span>available for opportunities</span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-line"></span>
+        <span>AI & Data Science</span>
+        <span class="tag-line"></span>
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line" data-text="Sarbjot">Sarbjot</span>
+        <span class="name-line accent" data-text="Singh">Singh</span>
+      </h1>
+      <p class="hero-subtitle">
+        Building intelligent systems that turn <em>raw data</em><br>
+        into decisions that matter.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-item">
+          <span class="mono">CGPA</span>
+          <span class="meta-value">9.18</span>
+        </span>
+        <span class="meta-divider">/</span>
+        <span class="meta-item">
+          <span class="mono">Clubs Led</span>
+          <span class="meta-value">12</span>
+        </span>
+        <span class="meta-divider">/</span>
+        <span class="meta-item">
+          <span class="mono">Internships</span>
+          <span class="meta-value">4+</span>
+        </span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="mailto:sarbjotsingh.info@gmail.com" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="mono">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono">01 /</span>
+        <span>Profile</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">The human<br><span class="accent">behind the model</span></h2>
+          <p class="about-body">
+            I'm a B.Tech student in AI & Data Science at GITM (2023–2027), 
+            currently ranked #1 in my university across multiple semesters. 
+            I work at the intersection of machine learning, predictive analytics, 
+            and generative AI — not just studying these tools, but shipping real projects with them.
+          </p>
+          <p class="about-body">
+            Beyond the terminal, I coordinate 12 student clubs, lead events, 
+            anchor official university functions, and mentor peers. 
+            I believe the best engineers are also strong communicators.
+          </p>
+          <div class="about-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Ambala, Haryana, India</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number" data-target="9.18">0</span>
+            <span class="stat-label">Current CGPA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="12">0</span>
+            <span class="stat-label">Clubs Managed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="4">0</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="10">0</span>
+            <span class="stat-label">Awards Won</span>
+          </div>
+        </div>
+      </div>
+      <div class="edu-block">
+        <div class="edu-card">
+          <div class="edu-year mono">2023 — 2027</div>
+          <div class="edu-info">
+            <h3>B.Tech — AI & Data Science</h3>
+            <p>Global Institute of Technology & Management</p>
+          </div>
+          <div class="edu-score">CGPA <strong>9.18</strong></div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year mono">2023</div>
+          <div class="edu-info">
+            <h3>Senior Secondary (XII) — Science</h3>
+            <p>Lord Mahavir Jain Public School, Ambala</p>
+          </div>
+          <div class="edu-score"><strong>71.20%</strong></div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-year mono">2021</div>
+          <div class="edu-info">
+            <h3>Secondary (X)</h3>
+            <p>Lord Mahavir Jain Public School, Ambala</p>
+          </div>
+          <div class="edu-score"><strong>93.80%</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono">02 /</span>
+        <span>Technical Arsenal</span>
+      </div>
+      <h2 class="section-title">What I <span class="accent">build with</span></h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⌨</span>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag level-mid">Python</span>
+            <span class="skill-tag level-mid">C</span>
+            <span class="skill-tag level-base">Java</span>
+            <span class="skill-tag level-base">SQL</span>
+            <span class="skill-tag level-mid">HTML</span>
+            <span class="skill-tag level-mid">CSS</span>
+            <span class="skill-tag level-mid">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">◈</span>
+            <h3>Data Science & AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag level-high">Machine Learning</span>
+            <span class="skill-tag level-high">Predictive Analytics</span>
+            <span class="skill-tag level-mid">Churn Analysis</span>
+            <span class="skill-tag level-mid">LLMs</span>
+            <span class="skill-tag level-mid">Generative AI</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">◧</span>
+            <h3>Tools & Libraries</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag level-high">Pandas</span>
+            <span class="skill-tag level-high">NumPy</span>
+            <span class="skill-tag level-high">Matplotlib</span>
+            <span class="skill-tag level-high">Scikit-learn</span>
+            <span class="skill-tag level-mid">DSA</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">◉</span>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag level-high">Team Leadership</span>
+            <span class="skill-tag level-high">Event Management</span>
+            <span class="skill-tag level-mid">Anchoring</span>
+            <span class="skill-tag level-high">Communication</span>
+            <span class="skill-tag level-mid">Teaching</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono">03 /</span>
+        <span>Experience</span>
+      </div>
+      <h2 class="section-title">Where I've <span class="accent">shipped work</span></h2>
+      <div class="timeline">
+        <div class="timeline-item" data-index="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Analyst Intern</h3>
+                <p class="timeline-company">Graphura India Pvt Ltd</p>
+              </div>
+              <span class="timeline-date mono">Jan 2025 – Present</span>
+            </div>
+            <p class="timeline-desc">Data cleaning, missing value handling, and collecting real datasets to build production ML models.</p>
+            <div class="timeline-tags">
+              <span>Python</span><span>ML</span><span>Data Cleaning</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-index="1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Science Intern</h3>
+                <p class="timeline-company">Saiket Systems</p>
+              </div>
+              <span class="timeline-date mono">Jul 2025 – Aug 2025</span>
+            </div>
+            <p class="timeline-desc">Churn analysis project to predict customer behavior patterns at scale.</p>
+            <div class="timeline-tags">
+              <span>Churn Analysis</span><span>Predictive Analytics</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-index="2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Data Analyst Intern</h3>
+                <p class="timeline-company">Paxcom Pvt Ltd</p>
+              </div>
+              <span class="timeline-date mono">Jul 2025 – Sep 2025</span>
+            </div>
+            <p class="timeline-desc">Developed predictive analytics pipelines using Python; gained hands-on exposure to LLMs and Generative AI in production environments.</p>
+            <div class="timeline-tags">
+              <span>LLMs</span><span>Generative AI</span><span>Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-index="3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Python Development Intern</h3>
+                <p class="timeline-company">CodSoft</p>
+              </div>
+              <span class="timeline-date mono">Jun 2024 – Jul 2024</span>
+            </div>
+            <p class="timeline-desc">Built Python projects including a password generator and calculator to solidify core programming fundamentals.</p>
+            <div class="timeline-tags">
+              <span>Python</span><span>Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono">04 /</span>
+        <span>Projects</span>
+      </div>
+      <h2 class="section-title">Things I've <span class="accent">actually built</span></h2>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-num mono">01</div>
+          <div class="project-content">
+            <h3>Influencer Collaboration Intelligence</h3>
+            <p>ML model trained on real datasets to recommend high-impact brand-influencer collaborations. Combines data ingestion, feature engineering, and recommendation logic end-to-end.</p>
+            <div class="project-stack">
+              <span>Machine Learning</span>
+              <span>Python</span>
+              <span>Scikit-learn</span>
+              <span>Pandas</span>
+            </div>
+          </div>
+          <div class="project-tag">ML · Recommendation</div>
+        </div>
+        <div class="project-card">
+          <div class="project-num mono">02</div>
+          <div class="project-content">
+            <h3>Price Fetcher</h3>
+            <p>Python scraper that extracts and tracks live product prices from Amazon, enabling price history monitoring and alerting.</p>
+            <div class="project-stack">
+              <span>Python</span>
+              <span>Web Scraping</span>
+              <span>Automation</span>
+            </div>
+          </div>
+          <div class="project-tag">Scraping · Automation</div>
+        </div>
+        <div class="project-card">
+          <div class="project-num mono">03</div>
+          <div class="project-content">
+            <h3>Profit Predictor</h3>
+            <p>Predictive analytics system forecasting business profitability from historical datasets. Useful for financial planning and trend identification.</p>
+            <div class="project-stack">
+              <span>Predictive Analytics</span>
+              <span>Python</span>
+              <span>Regression</span>
+            </div>
+          </div>
+          <div class="project-tag">Analytics · Forecasting</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section class="section achievements" id="achievements">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono">05 /</span>
+        <span>Recognition</span>
+      </div>
+      <h2 class="section-title">Moments that <span class="accent">stood out</span></h2>
+      <div class="ach-grid">
+        <div class="ach-card gold">
+          <span class="ach-medal">🥇</span>
+          <p>University Rank #1 — 1st, 3rd & 4th Semesters</p>
+        </div>
+        <div class="ach-card gold">
+          <span class="ach-medal">🥇</span>
+          <p>Research Paper Presentation — 1st Position</p>
+        </div>
+        <div class="ach-card gold">
+          <span class="ach-medal">🥇</span>
+          <p>Debate & Group Discussion — 1st Position</p>
+        </div>
+        <div class="ach-card gold">
+          <span class="ach-medal">🥇</span>
+          <p>Interdepartmental Basketball — 1st Position</p>
+        </div>
+        <div class="ach-card silver">
+          <span class="ach-medal">🥈</span>
+          <p>Research Paper Presentation — 2nd Position</p>
+        </div>
+        <div class="ach-card silver">
+          <span class="ach-medal">🥈</span>
+          <p>Storytelling Competition — 2nd Position</p>
+        </div>
+        <div class="ach-card bronze">
+          <span class="ach-medal">🥉</span>
+          <p>Technical Quiz Competition — 3rd Position</p>
+        </div>
+        <div class="ach-card special">
+          <span class="ach-medal">✦</span>
+          <p>Mr. Fresher 2023</p>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="cert-block">
+        <h3 class="cert-title">Certifications</h3>
+        <div class="cert-list">
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <div class="cert-info">
+              <h4>Innovation Ambassador — Advanced Level</h4>
+              <p>MoE's Innovation Cell (AICTE) · Mar 2026</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <div class="cert-info">
+              <h4>Innovation Ambassador — Foundation Level</h4>
+              <p>AICTE · Mar 2026</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <div class="cert-info">
+              <h4>Path to Publication: Scientific Research</h4>
+              <p>Mangalmay Institute · Jun 2025</p>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <div class="cert-info">
+              <h4>AI Tools Workshop</h4>
+              <p>Be10x · Jun 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="mono">06 /</span>
+        <span>Let's Connect</span>
+      </div>
+      <div class="contact-inner">
+        <h2 class="section-title contact-title">
+          Got an interesting<br><span class="accent">problem to solve?</span>
+        </h2>
+        <p class="contact-sub">I'm actively seeking internship and full-time opportunities in Data Science and AI. If you're building something interesting — let's talk.</p>
+        <div class="contact-links">
+          <a href="mailto:sarbjotsingh.info@gmail.com" class="contact-link">
+            <span class="link-icon">✉</span>
+            <span>sarbjotsingh.info@gmail.com</span>
+            <span class="link-arrow">→</span>
+          </a>
+          <a href="https://www.linkedin.com/in/sarbjot-singh" target="_blank" class="contact-link">
+            <span class="link-icon">in</span>
+            <span>LinkedIn Profile</span>
+            <span class="link-arrow">→</span>
+          </a>
+          <a href="tel:+919053203274" class="contact-link">
+            <span class="link-icon">☎</span>
+            <span>+91 90532 03274</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="mono footer-copy">© 2025 Sarbjot Singh</span>
+      <span class="footer-mid">Built with intentionality.</span>
+      <span class="mono footer-loc">Ambala, IN</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
